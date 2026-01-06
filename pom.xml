@@ -59,6 +59,9 @@
                 <mainClass>com.quasys.demo.HelloWorldApplication</mainClass>
               </transformer>
             </transformers>
+            <configuration>
+              <finalName>app</finalName>
+            </configuration>
           </configuration>
         </execution>
       </executions>
