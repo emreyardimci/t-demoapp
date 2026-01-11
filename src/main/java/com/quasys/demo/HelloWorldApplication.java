@@ -7,7 +7,7 @@ public class HelloWorldApplication {
 			System.out.println("APP_DB_CRED = " + System.getenv("APP_DB_CRED"));
 			System.out.println("APP_API_KEY = " + System.getenv("APP_API_KEY"));
 			System.setProperty("APP_MY_CERT", "this is cert private key");
-			System.out.println("APP_MY_CERT = " + System.getenv("APP_MY_CERT"));
+			System.out.println("APP_MY_CERT = " + System.getProperty("APP_MY_CERT"));
             try {
                 Thread.sleep(5_000); // 5 saniye
             } catch (InterruptedException e) {
