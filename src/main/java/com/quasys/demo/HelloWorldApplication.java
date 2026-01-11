@@ -5,7 +5,7 @@ public class HelloWorldApplication {
                 while (true) {
             System.out.println("Hello World from THY!");
             try {
-                Thread.sleep(10_000); // 10 saniye
+                Thread.sleep(5_000); 
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 break;
