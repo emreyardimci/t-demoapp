@@ -88,7 +88,8 @@ public class BeyondTrustClient {
         }
 
         JsonNode json = objectMapper.readTree(response.body());
-        JsonNode textNode = json.get("text");
+        JsonNode textNode = json.hasNonNull("Text") ? json.get("Text")
+                     : (json.hasNonNull("text") ? json.get("text") : null);
         if (textNode == null || textNode.isNull()) {
             throw new RuntimeException("Response içinde 'text' alanı yok: " + response.body());
         }
