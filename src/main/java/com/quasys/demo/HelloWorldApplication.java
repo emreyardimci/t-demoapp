@@ -8,6 +8,9 @@ public class HelloWorldApplication {
         System.out.println("APP_POSTGRESQL_PASSWORD: " + System.getenv("APP_POSTGRESQL_PASSWORD"));
         System.out.println("APP_POSTGRESQL_USERNAME: " + System.getenv("APP_POSTGRESQL_USERNAME"));
 
+        System.setProperty("APP_POSTGRESQL_PRIVATEKEY", "ThisIsCertPrivateKey");
+        System.out.println("APP_POSTGRESQL_PRIVATEKEY: " + System.getProperty("APP_POSTGRESQL_PRIVATEKEY"));
+
         Thread.sleep(5_000);
         }
     }
