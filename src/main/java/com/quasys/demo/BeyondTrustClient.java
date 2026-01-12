@@ -38,7 +38,6 @@ public class BeyondTrustClient {
                 .uri(URI.create(BASE_URL + "/Auth/SignAppin"))
                 .header("Content-Type", "application/json")
                 .header("Accept", "application/json")
-                .header("Content-Length", "0")
                 .header("Authorization",
                         "PS-Auth key=" + API_KEY +
                         "; runas=" + RUN_AS +
