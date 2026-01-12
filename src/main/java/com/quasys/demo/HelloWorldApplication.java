@@ -6,6 +6,7 @@ public class HelloWorldApplication {
 
         System.out.println("Hello World from THY!");
         System.out.println("APP_POSTGRESQL_PASSWORD: " + System.getenv("APP_POSTGRESQL_PASSWORD"));
+        System.out.println("APP_POSTGRESQL_USERNAME: " + System.getenv("APP_POSTGRESQL_USERNAME"));
 
         Thread.sleep(5_000);
         }
