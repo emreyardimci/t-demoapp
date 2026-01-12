@@ -1,7 +1,7 @@
 package com.quasys.demo;
 
 public class HelloWorldApplication {
-    public static void main(String[] args) {
+    public static void main(String[] args)  throws Exception {
         System.out.println("Hello World from THY!");
 
         BeyondTrustClient client = new BeyondTrustClient();
